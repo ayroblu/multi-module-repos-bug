@@ -17,10 +17,10 @@ register_toolchains("@rust_toolchains//:all")
 
 crate = use_extension("@rules_rust//crate_universe:extensions.bzl", "crate")
 crate.spec(
-    package = "unicode-segmentation",
-    version = "1.12.0",
+    package = "regex",
+    version = "1.11.1",
 )
-crate.from_specs()
+crate.from_specs(name = "ignore")
 use_repo(crate, "crates")
 
 # ------------ swift
@@ -41,6 +41,7 @@ swift_deps = use_extension(
     "swift_deps",
 )
 swift_deps.from_package(
+    declare_swift_package = False,
     resolved = "//:Package.resolved",
     swift = "//:Package.swift",
 )
@@ -48,4 +49,5 @@ use_repo(
     swift_deps,
     "swift_package",
     "swiftpkg_swift_collections",
+    "swiftpkg_swift_protobuf",
 )
