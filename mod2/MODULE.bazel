@@ -1,10 +1,4 @@
-module(name = "mod1")
-
-bazel_dep(name = "mod2", version = "1.0")
-local_path_override(
-    module_name = "mod2",
-    path = "../mod2",
-)
+module(name = "mod2")
 
 # ------------ rust
 bazel_dep(name = "rules_rust", version = "0.67.0")

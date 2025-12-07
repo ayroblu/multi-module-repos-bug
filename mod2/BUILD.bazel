@@ -1,0 +1,16 @@
+load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
+load("@rules_rust//rust:defs.bzl", "rust_library")
+
+rust_library(
+    name = "rust",
+    srcs = ["lib.rs"],
+    deps = ["@crates//:unicode-segmentation"],
+)
+
+swift_library(
+    name = "swift",
+    srcs = ["example.swift"],
+    deps = [
+        "@swiftpkg_swift_collections//:Collections",
+    ],
+)
