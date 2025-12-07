@@ -575,13 +575,36 @@
     "@@rules_swift_package_manager+//:extensions.bzl%swift_deps": {
       "general": {
         "bzlTransitiveDigest": "JqeNEDeqj1mQl56JOi0CAKz/C9C9ybNo/xWy+S83H2s=",
-        "usagesDigest": "T4dq2DHED4ab12ozS9tPTQVfZ9Cam3vb0tp0kK63WJQ=",
+        "usagesDigest": "Mp/b506Mhcu2FXumdOw91J+nmTVHR86DFQ7a6m6VmwI=",
         "recordedFileInputs": {
-          "@@//Package.resolved": "8ee5f645789da16880c76397991be19263b4e67e71bd79b696d9e61d019cd3e6"
+          "@@//Package.resolved": "2a5b4cbb13128697c4732a62424689f235290cff602cfabe3912ddf9c154586b",
+          "@@mod2+//Package.resolved": "8ee5f645789da16880c76397991be19263b4e67e71bd79b696d9e61d019cd3e6"
         },
         "recordedDirentsInputs": {},
         "envVariables": {},
         "generatedRepoSpecs": {
+          "swiftpkg_swift_protobuf": {
+            "repoRuleId": "@@rules_swift_package_manager+//swiftpkg/internal:swift_package.bzl%swift_package",
+            "attributes": {
+              "bazel_package_name": "swiftpkg_swift_protobuf",
+              "commit": "c169a5744230951031770e27e475ff6eefe51f9d",
+              "remote": "https://github.com/apple/swift-protobuf.git",
+              "version": "1.33.3",
+              "env": {},
+              "env_inherit": [],
+              "init_submodules": false,
+              "recursive_init_submodules": true,
+              "patch_args": [
+                "-p0"
+              ],
+              "patch_cmds": [],
+              "patch_cmds_win": [],
+              "patch_tool": "",
+              "patches": [],
+              "publicly_expose_all_targets": false,
+              "replace_scm_with_registry": false
+            }
+          },
           "swift_package": {
             "repoRuleId": "@@rules_swift_package_manager+//swiftpkg/internal:swift_package_tool_repo.bzl%swift_package_tool_repo",
             "attributes": {
@@ -614,6 +637,7 @@
         },
         "moduleExtensionMetadata": {
           "explicitRootModuleDirectDeps": [
+            "swiftpkg_swift_protobuf",
             "swiftpkg_swift_collections",
             "swift_package"
           ],

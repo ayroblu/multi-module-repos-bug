@@ -12,5 +12,6 @@ swift_library(
     srcs = ["example.swift"],
     deps = [
         "@swiftpkg_swift_collections//:Collections",
+        "@swiftpkg_swift_protobuf//:SwiftProtobuf",
     ],
 )

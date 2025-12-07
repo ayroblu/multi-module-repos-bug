@@ -1,13 +1,13 @@
 {
-  "originHash" : "6ce42ab82d2cfb879615cf929dfe6ec47e28ce7f0dc61eca0244e3c6c4056b24",
+  "originHash" : "d75abf53f4d899d021cb5a64a103c2bbd747788ca214c3bda20ec329bcaf337f",
   "pins" : [
     {
-      "identity" : "swift-collections",
+      "identity" : "swift-protobuf",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-collections.git",
+      "location" : "https://github.com/apple/swift-protobuf.git",
       "state" : {
-        "revision" : "7b847a3b7008b2dc2f47ca3110d8c782fb2e5c7e",
-        "version" : "1.3.0"
+        "revision" : "c169a5744230951031770e27e475ff6eefe51f9d",
+        "version" : "1.33.3"
       }
     }
   ],
